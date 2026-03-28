@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundial 2026</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0b3d91;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #00d4ff;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            background-color: #0b3d91;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #062c6b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mundial de Fútbol 2026</h1>
+    <p>La mayor fiesta del fútbol mundial</p>
+</header>
+
+<nav>
+    <a href="#info">Información</a>
+    <a href="#sedes">Sedes</a>
+    <a href="#equipos">Equipos</a>
+    <a href="#curiosidades">Curiosidades</a>
+</nav>
+
+<section id="info">
+    <div class="card">
+        <h2>¿Qué es el Mundial 2026?</h2>
+        <p>
+            El Mundial de Fútbol 2026 será la próxima edición de la Copa Mundial de la FIFA.
+            Será histórico porque contará con 48 selecciones, en lugar de las 32 tradicionales.
+        </p>
+    </div>
+</section>
+
+<section id="sedes">
+    <div class="card">
+        <h2>Países Sede</h2>
+        <p>El Mundial 2026 se jugará en tres países:</p>
+        <ul>
+            <li>Estados Unidos</li>
+            <li>México</li>
+            <li>Canadá</li>
+        </ul>
+    </div>
+</section>
+
+<section id="equipos">
+    <div class="card">
+        <h2>Equipos Participantes</h2>
+        <p>
+            Por primera vez participarán 48 selecciones nacionales de todo el mundo,
+            aumentando la competitividad y la emoción del torneo.
+        </p>
+        <button onclick="mostrarMensaje()">Haz clic para animarte</button>
+        <p id="mensaje"></p>
+    </div>
+</section>
+
+<section id="curiosidades">
+    <div class="card">
+        <h2>Curiosidades</h2>
+        <ul>
+            <li>Será el primer Mundial con 3 países anfitriones.</li>
+            <li>Habrá más partidos que en cualquier edición anterior.</li>
+            <li>México será el primer país en albergar 3 mundiales.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>Proyecto de Sistemas - Mundial 2026</p>
+</footer>
+
+<script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").innerText = "¡Prepárate para el mejor Mundial de la historia!";
+    }
+</script>
+
+</body>
+</html>
