@@ -1,130 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mundial 2026</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #0b3d91;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #00d4ff;
-        }
-        section {
-            padding: 20px;
-        }
-        .card {
-            background-color: white;
-            margin: 15px 0;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #0b3d91;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        button {
-            background-color: #0b3d91;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #062c6b;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Mundial 2026</title>
+
+<style>
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:linear-gradient(90deg,#0b3d91,#00aaff);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#111;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+section{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    margin:15px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+button{
+    background:#0b3d91;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#062c6b;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Mundial de Fútbol 2026</h1>
-    <p>La mayor fiesta del fútbol mundial</p>
+    <h1>Mundial de Fútbol 2026 ⚽</h1>
+    <p>El torneo más grande en la historia del fútbol</p>
 </header>
 
 <nav>
     <a href="#info">Información</a>
     <a href="#sedes">Sedes</a>
+    <a href="#formato">Formato</a>
     <a href="#equipos">Equipos</a>
+    <a href="#historia">Historia</a>
     <a href="#curiosidades">Curiosidades</a>
 </nav>
 
 <section id="info">
-    <div class="card">
-        <h2>¿Qué es el Mundial 2026?</h2>
-        <p>
-            El Mundial de Fútbol 2026 será la próxima edición de la Copa Mundial de la FIFA.
-            Será histórico porque contará con 48 selecciones, en lugar de las 32 tradicionales.
-        </p>
-    </div>
+<div class="card">
+<h2>¿Qué es el Mundial 2026?</h2>
+<p>
+El Mundial de Fútbol 2026 será organizado por la FIFA y será la edición más grande de la historia.
+Por primera vez participarán 48 selecciones, lo que aumentará la emoción y la competencia.
+</p>
+</div>
 </section>
 
 <section id="sedes">
-    <div class="card">
-        <h2>Países Sede</h2>
-        <p>El Mundial 2026 se jugará en tres países:</p>
-        <ul>
-            <li>Estados Unidos</li>
-            <li>México</li>
-            <li>Canadá</li>
-        </ul>
-    </div>
+<div class="card">
+<h2>Países Sede 🌎</h2>
+<ul>
+<li>Estados Unidos</li>
+<li>México</li>
+<li>Canadá</li>
+</ul>
+<p>
+Será el primer mundial organizado por tres países al mismo tiempo.
+</p>
+</div>
+</section>
+
+<section id="formato">
+<div class="card">
+<h2>Nuevo Formato 🏆</h2>
+<p>
+El torneo tendrá 48 equipos divididos en grupos. Luego avanzarán a fases eliminatorias
+hasta llegar a la gran final.
+</p>
+</div>
 </section>
 
 <section id="equipos">
-    <div class="card">
-        <h2>Equipos Participantes</h2>
-        <p>
-            Por primera vez participarán 48 selecciones nacionales de todo el mundo,
-            aumentando la competitividad y la emoción del torneo.
-        </p>
-        <button onclick="mostrarMensaje()">Haz clic para animarte</button>
-        <p id="mensaje"></p>
-    </div>
+<div class="card">
+<h2>Equipos Participantes ⚽</h2>
+<p>
+Habrá selecciones de todos los continentes: América, Europa, África, Asia y Oceanía.
+Esto permitirá ver más culturas y estilos de juego.
+</p>
+
+<button onclick="mensaje()">Haz clic aquí</button>
+<p id="texto"></p>
+
+</div>
+</section>
+
+<section id="historia">
+<div class="card">
+<h2>Historia de los Mundiales 📜</h2>
+<p>
+El primer Mundial se jugó en 1930 en Uruguay. Desde entonces, se ha convertido en el evento deportivo
+más importante del planeta.
+</p>
+</div>
 </section>
 
 <section id="curiosidades">
-    <div class="card">
-        <h2>Curiosidades</h2>
-        <ul>
-            <li>Será el primer Mundial con 3 países anfitriones.</li>
-            <li>Habrá más partidos que en cualquier edición anterior.</li>
-            <li>México será el primer país en albergar 3 mundiales.</li>
-        </ul>
-    </div>
+<div class="card">
+<h2>Curiosidades 🤯</h2>
+<ul>
+<li>México será el primer país en tener 3 mundiales</li>
+<li>Habrá más partidos que nunca</li>
+<li>Se espera récord de espectadores</li>
+</ul>
+</div>
 </section>
 
 <footer>
-    <p>Proyecto de Sistemas - Mundial 2026</p>
+<p>Proyecto de Sistemas - Mundial 2026 😎</p>
 </footer>
 
 <script>
-    function mostrarMensaje() {
-        document.getElementById("mensaje").innerText = "¡Prepárate para el mejor Mundial de la historia!";
-    }
+function mensaje(){
+    document.getElementById("texto").innerText = "¡Prepárate para el mejor Mundial de la historia!";
+}
 </script>
 
 </body>
